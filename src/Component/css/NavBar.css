@@ -1,0 +1,118 @@
+
+#navigation {
+  display: flex;
+  background: transparent;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+#menu {
+  width: 35px;
+  height: 35px;
+  margin: 30px 10px 20px 20px;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+}
+
+.nav {
+  padding: 0;
+  margin: 0px 20px;
+  display: none;
+  transition: 1s ease;
+  display: none;
+  font-family: sans-serif;
+  height: fit-content;
+  padding: 50px;
+}
+
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  border: 5px;
+  transition: 0.5s ease;
+  float: right;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+.nav li a {
+  color: #050a44;
+  text-decoration: none;
+}
+
+.nav li a:hover {
+  letter-spacing: 10px;
+  transition: 0.5s ease;
+}
+
+.nav li {
+  list-style: none;
+  text-align: left;
+  margin-top: 4px;
+}
+
+.icon .bar {
+  background-color: black;
+}
+
+.icon #bar1 {
+  transform: translateY(5px) rotate(-45deg);
+}
+
+.icon #bar3 {
+  transform: translateY(-3px) rotate(45deg);
+}
+
+.icon #bar2 {
+  opacity: 0;
+}
+
+.change {
+  background-color: #cccc33;
+  margin: 0;
+  position: absolute;
+  font-size: 30px;
+  z-index: 99;
+  width: 100%;
+  display: flex;
+  transition: 0.3s ease;
+  top: 0%;
+}
+
+#nav-items {
+  padding: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    padding: 0;
+    margin: 0;
+  }
+  .nav li a:hover {
+    letter-spacing: 4px;
+  }
+  #nav-items {
+    padding: 50px;
+  }
+}
+.transition:hover{
+  transition: 0.5s ease;
+  letter-spacing: 4px;
+}
+.custombtn:hover{
+  transition: 0.5s ease;
+ 
+}
